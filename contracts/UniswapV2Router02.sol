@@ -179,7 +179,7 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
         uint deadline
     ) public virtual override ensure(deadline) returns (uint amountETH) {
         (, amountETH) = removeLiquidity(
-            token,
+            token,-
             WETH,
             liquidity,
             amountTokenMin,

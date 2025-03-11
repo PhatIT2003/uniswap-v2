@@ -32,7 +32,7 @@ module.exports = {
         },
       },
       {
-        version: "0.4.18", // Hỗ trợ các tệp sử dụng 0.6.6
+        version: "0.4.18", 
         settings: {
           optimizer: {
             enabled: true,

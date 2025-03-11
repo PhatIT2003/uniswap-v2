@@ -1,8 +1,9 @@
 const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
-const TokenModule = buildModule("TokenModule", (m) => {
-  const Pair = m.contract("UniswapV2Pairs");
 
-  return { Pair };
+const TokenModule = buildModule("TokenModule", (m) => {
+  const WETH = m.contract("WETH9");
+
+  return { WETH };
 });
 
 module.exports = TokenModule;
